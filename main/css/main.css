@@ -1,0 +1,91 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+* {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  margin: 0;
+}
+
+header {
+  height: 100px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+  background-color: #fffbda;
+}
+
+header div {
+  font-size: 25px;
+  font-weight: 300;
+  color: #707070;
+
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px;
+}
+
+.sec1 {
+  height: 400px;
+  background-color: #fffbda;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 160px;
+}
+
+.sec1 img {
+  width: 305px;
+  height: 305px;
+}
+
+.title {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.content {
+  font-size: 30px;
+  font-weight: 300;
+  color: #707070;
+}
+
+.sec2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15vw 20px;
+}
+
+.rec {
+  color: #707070;
+  font-size: 35px;
+  font-weight: 400;
+  margin: 30px 0 15px;
+}
+
+.letters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #707070;
+  font-size: 25px;
+  font-weight: 300;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.let_img {
+  width: 260px;
+  height: 260px;
+}
