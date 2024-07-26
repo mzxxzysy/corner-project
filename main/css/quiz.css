@@ -1,0 +1,103 @@
+* {
+    font-weight: 250;
+}
+/*헤더(nav바)*/
+.header {
+    width: 100vw;
+    height: 80px;
+    background-color: #FFFBDA;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    margin-left: 44px;
+}
+
+.category {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.category li {
+    margin: 0;
+    margin-left: 73px;
+}
+
+.category a:link,
+.category a:visited  {
+    color: #707070;
+    font-size: 25px;
+    font-weight: 250;
+    text-decoration: none;
+}
+
+/*제목*/
+.title {
+    width: 100vw;
+    height: 340px;
+    background: url(.jpg), #D9D9D9;
+}
+
+.title_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.title_text h2 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.title_text h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+/*퀴즈*/
+.content {
+    display: flex;
+}
+
+.quiz_part {
+    border-right: 1px solid #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.answer li {
+    margin: 0;
+    width: 185px;
+    height: 71px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px; /*확인 필요*/
+}
+
+.button_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submitBtn {
+    width: 244px;
+    height: 71px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #FFFBDA;
+    margin: 0 auto;
+}
