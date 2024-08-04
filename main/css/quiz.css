@@ -1,0 +1,219 @@
+* {
+    font-weight: 250;
+}
+
+body {
+    position: relative;
+    height: 1500px;
+}
+
+.content {
+    position: absolute;
+    right: 34px;
+    height: 1500px;
+}
+/*헤더(navbar)*/
+.header {
+    width: 100vw;
+    height: 80px;
+    background-color: #FFFBDA;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    margin-left: 44px;
+}
+
+.category {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.category li {
+    margin: 0;
+    margin-left: 33px;
+}
+
+.category a:link,
+.category a:visited  {
+    color: #707070;
+    font-size: 25px;
+    font-weight: 250;
+    text-decoration: none;
+}
+
+/*제목*/
+.title {
+    width: 100vw;
+    height: 340px;
+    background: url('../img/header.png'), #D9D9D9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title_text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+}
+
+.title_text h2 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.title_text h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+/*퀴즈*/
+.content {
+    display: flex;
+}
+
+.question{
+    font-size: 25px;
+}
+
+.quiz_part {
+    border-right: 1px solid #D9D9D9;
+    display: flex;
+    justify-content: center;
+    margin-top: 112px;
+    padding-right: 106px;
+}
+
+.answers-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.answer-btn {
+    margin: 0;
+    width: 185px;
+    height: 71px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    font-size: 25px;
+    background-color: white;
+}
+
+.button_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submitBtn {
+    width: 244px;
+    height: 71px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #FFFBDA;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.question-block {
+    margin-bottom: 75px;
+}
+
+.hide {
+    display: none;
+}
+
+.selected {
+    background-color: #D8EFD3;
+}
+
+/*사이드*/
+.hot h3, .quiz_link h3{
+    color: #707070;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 0 100px 15px 10px ;
+    border-bottom: 1px solid #707070;
+}
+
+.hot_list,
+.quiz_link {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.hot_list li,
+.quiz_link a {
+    margin-left: 10px;
+}
+
+.hot_list a:visited,
+.hot_list a:link,
+.quiz_link a:visited,
+.quiz_link a:link {
+    text-decoration: none;
+    color: #9D9D9D;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.aside_content {
+    margin-top: 131.22px;
+    margin-left: 43.25px;
+}
+
+/*결과 화면*/
+.your_score {
+    position: relative;
+    width: 624px;
+    height: 265px;
+    font-size: 25px;
+    background-color: #FFFBDA;
+    padding: 20px 32px;
+    font-weight: 400;
+}
+
+.last_sen {
+    margin: 0;
+    text-align: right;
+    font-weight: 400;
+}
+
+.greet {
+    width: 624px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#score {
+    font-size: 70px;
+    font-weight: 700;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.result_btn button {
+    width: 244px;
+    height: 71px;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: #D8EFD3;
+    margin-left: 60px;
+    margin-top: 44px;
+    border-width: 1px;
+}

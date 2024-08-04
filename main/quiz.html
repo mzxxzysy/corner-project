@@ -5,10 +5,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
+    <link rel="stylesheet" href="./css/quiz.css">
 </head>
 
 <body>
+    <div class="header">
+        <nav class="nav">
+            <a><img src="https://via.placeholder.com/40x40" width="40" height="40"></a>
+            <ul class="category">
+                <li><a href="main.html">홈</a></li>
+                <li><a href="#">피드</a></li>
+                <li><a href="#">인기글</a></li>
+            </ul>
+        </nav>
+    </div>
 
+    <div class="title">
+        <div class="title_text">
+            <h2>오늘의 퀴즈</h2>
+            <h1>제철음식 퀴즈</h1>
+            <p>#봄 #여름 #가을 #겨울</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="quiz_part">
+            <div class="quiz_content">
+                <div id="quiz">
+
+                </div>
+                <div class="button_div">
+                    <button type="button" id="submit-btn" onclick="submitQuiz()" class="submitBtn">결과 보기</button>
+                </div>
+                <div id="result" class="hide">
+                    <div class="your_score">당신의 점수는
+                        <p id="score"></p>
+                        <p class="last_sen">입니다.</p>
+                    </div>
+                    <p class="greet">수고하셨습니다.</p>
+                    <div class="result_btn">
+                        <button type="button" onclick="goHome()">홈</button>
+                        <button type="button" class="again" onclick="restartQuiz()">다시 보기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aside_part">
+            <div class="aside_content">
+                <div class="hot">
+                    <h3>오늘의 인기글</h3>
+                    <ul class="hot_list">
+                        <li><a href="#">봄</a></li>
+                        <li><a href="#">여름</a></li>
+                        <li><a href="#">가을</a></li>
+                        <li><a href="#">겨울</a></li>
+                    </ul>
+                </div>
+                <div class="quiz_link">
+                    <h3>오늘의 퀴즈</h3>
+                    <a href="#">제철음식 퀴즈</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const questions = [
+            {
+                question: "도라지는 언제 제철일까요?",
+                answers: [
+                    { text: "봄", correct: false },
+                    { text: "여름", correct: true },
+                    { text: "가을", correct: false },
+                    { text: "겨울", correct: false }
+                ]
+            },
+            {
+                question: "다음 중 겨울 제철음식이 아닌 것은?",
+                answers: [
+                    { text: "삼치", correct: false },
+                    { text: "한라봉", correct: false },
+                    { text: "장어", correct: true },
+                    { text: "과메기", correct: false }
+                ]
+            }
+        ];
+
+        function startQuiz() {
+            const quizContainer = document.getElementById('quiz');
+            quizContainer.innerHTML = '';
+            questions.forEach((question, questionIndex) => {
+                const questionElement = document.createElement('div');
+                questionElement.classList.add('question-block');
+                const questionText = document.createElement('div');
+                questionText.classList.add('question');
+                questionText.innerText = question.question;
+                questionElement.appendChild(questionText);
+
+                const answersContainer = document.createElement('div');
+                answersContainer.classList.add('answers-container');
+                question.answers.forEach((answer, answerIndex) => {
+                    const answerButton = document.createElement('button');
+                    answerButton.innerText = answer.text;
+                    answerButton.classList.add('answer-btn');
+                    answerButton.setAttribute('data-question-index', questionIndex);
+                    answerButton.setAttribute('data-answer-index', answerIndex);
+                    answersContainer.appendChild(answerButton);
+                });
+                questionElement.appendChild(answersContainer);
+                quizContainer.appendChild(questionElement);
+            });
+        }
+
+        function submitQuiz() {
+            let score = 0;
+            questions.forEach((question, questionIndex) => {
+                const selectedAnswer = document.querySelector(`button[data-question-index="${questionIndex}"].selected`);
+                if (selectedAnswer) {
+                    const answerIndex = selectedAnswer.getAttribute('data-answer-index');
+                    if (question.answers[answerIndex].correct) {
+                        score++;
+                    }
+                }
+            });
+            showResult(score);
+        }
+
+        function showResult(score) {
+            document.getElementById('quiz').classList.add('hide');
+            document.getElementById('submit-btn').classList.add('hide');
+            document.getElementById('result').classList.remove('hide');
+            document.getElementById('score').innerText = `${score} / ${questions.length}`;
+        }
+
+        function restartQuiz() {
+            document.getElementById('quiz').classList.remove('hide');
+            document.getElementById('submit-btn').classList.remove('hide');
+            document.getElementById('result').classList.add('hide');
+            startQuiz();
+        }
+
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('answer-btn')) {
+                const questionIndex = e.target.getAttribute('data-question-index');
+                document.querySelectorAll(`button[data-question-index="${questionIndex}"]`).forEach(btn => btn.classList.remove('selected'));
+                e.target.classList.add('selected');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            startQuiz();
+        });
+
+
+        function goHome() {
+            window.location.href = "main.html";
+        }
+
+    </script>
 </body>
 
 </html>
