@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/letter.css">
+    <title>봄</title>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo"></div>
+            <div class="menu">
+                <img src="./img/Rectangle 7.png" alt="로고" width="50px">
+                <span><a href="main.html"> 홈</a></span>
+                <span>피드</span>
+                <span>인기글</span>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="content">
+            <img src="./img/spring.png" alt="봄">
+            <div class="text">
+                <h2>오늘의 인기글</h2>
+                <h1>봄</h1>
+                <p>#봄#제철음식</p>
+            </div>
+        </div>
+        
+    </nav>
+
+    <article>
+        <div>
+            <h3>오늘의 인기글</h3>
+            <hr>
+            <div>
+                <span>봄 </span><br>
+                <span>여름 </span><br>
+                <span>가을 </span><br>
+                <span>겨울 </span><br><br><br><br>
+            </div>
+        </div>
+        <div>
+            <h3>오늘의 퀴즈</h3>
+            <hr>
+            <div>
+                <span>제철음식 퀴즈</span>
+            </div>
+        </div>
+    </article>
+    <section class="edit">
+        <img src="./img/달래.PNG" alt="달래" width="300px" class="img-edit">
+        <br>
+        <p>
+            비타민 C 풍부
+        </p>
+        <p>
+            생달래 100g에 하루 필요 섭취량의 6배에 달하는 철분 함유하므로 빈혈에 예방
+        </p>
+        <br><br><br>
+        <img src="./img/냉이.PNG" alt="냉이" width="300px" class="img-edit">
+        <br>
+        <p>
+            피로회복
+        </p>
+        <p>
+            채소 중 단백질 함량 가장 많으며 무기질(칼슘, 철분 등)이 풍부함
+        </p>
+        <br><br><br>
+        <img src="./img/주꾸미.PNG" alt="주꾸미" width="300px" class="img-edit">
+        <br>
+        <p>필수 아미노산 풍부</p>
+        <p>눈 건강에 좋음</p>
+        <p>DHA 등의 불포화지방산 다량 함유 -> 혈중 콜레스테롤 수치 감소 -> 혈관 건강</p>
+        <p>알코올 해독 능력, 간 기능 개선</p>    
+        <p>타우린이 풍부하여 피로회복에 도움됨</p>
+
+        <br><br><br>
+    </section>
+    <!--댓글 기능-->
+    <div class="comment-form">
+        <input type="text" id="author" placeholder="이름">
+        <textarea id="text" rows="4" placeholder="댓글 내용을 입력하세요"></textarea>
+        <button onclick="addComment()">댓글 달기</button>
+    </div>
+
+    <!--다음 페이지-->
+    
+    <div class="page">
+        <hr>
+        <a href="summer.html">다음 글></a>
+    </div>
+    
+    <script src="letter.js"></script>
+</body>
+</html>

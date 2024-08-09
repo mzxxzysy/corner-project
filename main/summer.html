@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/letter.css">
+    <title>여름</title>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo"></div>
+            <div class="menu">
+                <img src="./img/Rectangle 7.png" alt="로고" width="50px">
+                <span> <a href="main.html">홈</a> </span>
+                <span>피드</span>
+                <span>인기글</span>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="content">
+            <img src="./img/summer.png" alt="여름">
+            <div class="text">
+                <h2>오늘의 인기글</h2>
+                <h1>여름</h1>
+                <p>#여름#제철음식</p>
+            </div>
+        </div>
+        
+    </nav>
+
+    <article>
+        <div>
+            <h3>오늘의 인기글</h3>
+            <hr>
+            <div>
+                <span>봄</span><br>
+                <span>여름</span><br>
+                <span>가을 </span><br>
+                <span>겨울 </span><br><br><br><br>
+            </div>
+        </div>
+        <div>
+            <h3>오늘의 퀴즈</h3>
+            <hr>
+            <div>
+                <span>제철음식 퀴즈</span>
+            </div>
+        </div>
+    </article>
+    <section class="edit">
+        <img src="./img/장어.PNG" alt="장어" width="300px" class="img-edit">
+        <br>
+        <p>
+            EDA, DHA 등 불포화 지방산 풍부 -> 혈중 콜레스테롤 수치 감소, 혈소판의 응고를 방해하여 동맥경화 예방
+        </p>
+        <p>
+            피부 미용, 항암 작용에 도움됨
+        </p>
+        <p>
+            칼슘이 풍부하여 골다공증에 예방
+        </p>
+        <br><br><br>
+        <img src="./img/도라지.PNG" alt="도라지" width="300px" class="img-edit">
+        <br>
+        <p>
+            섬유소 풍부하여 장 건강에 도움
+        </p>
+        <p>
+            사포닌 성분이 가래를 삭히고 혈당과 콜레스테롤을 낮춤 -> 기관지 건강, 혈관 건강
+        </p>
+        <p>
+            면역력 강화 뿐만 아니라 항암 효과에 좋음
+        </p>
+        <br><br><br>
+        <img src="./img/블루베리.PNG" alt="블루베리" width="300px" class="img-edit">
+        <br>
+        <p>미국 타임지에서 선정한 10대 슈퍼푸드</p>
+        <p>안토시아닌 풍부 -> 항산화력 우수 -> 눈, 뇌세포 노화 예방, 망막세포 안 자주빛 색소 생성</p>
+        <p>루테인 성분 함유 -> 시력 보호</p>
+        <p>저열량, 저지방 -> 다이어트에 좋음</p>    
+        <p>식이섬유소 풍부 -> 변비 예방</p>
+        <br><br><br>
+    </section>
+
+
+        <!--댓글 기능-->
+        <div class="comment-form">
+            <input type="text" id="author" placeholder="이름">
+            <textarea id="text" rows="4" placeholder="댓글 내용을 입력하세요"></textarea>
+            <button onclick="addComment()">댓글 달기</button>
+        </div>
+
+        <!--다음 페이지-->
+    
+    <div class="page">
+        <hr>
+        <a href="fall.html">다음 글></a>
+    </div>
+    
+    <script src="letter.js"></script>
+</body>
+</html>

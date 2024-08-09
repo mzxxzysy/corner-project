@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/letter.css">
+    <title>가을</title>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo"></div>
+            <div class="menu">
+                <img src="./img/Rectangle 7.png" alt="로고" width="50px">
+                <span><a href="main.html">홈</a></span>
+                <span>피드</span>
+                <span>인기글</span>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="content">
+            <img src="./img/fall.png" alt="가을">
+            <div class="text">
+                <h2>오늘의 인기글</h2>
+                <h1>가을</h1>
+                <p>#가을#제철음식</p>
+            </div>
+        </div>
+        
+    </nav>
+
+    <article>
+        <div>
+            <h3>오늘의 인기글</h3>
+            <hr>
+            <div>
+                <span>봄 </span><br>
+                <span>여름 </span><br>
+                <span>가을 </span><br>
+                <span>겨울 </span><br><br><br><br>
+            </div>
+        </div>
+        <div>
+            <h3>오늘의 퀴즈</h3>
+            <hr>
+            <div>
+                <span>제철음식 퀴즈</span>
+            </div>
+        </div>
+    </article>
+    <section class="edit">
+        <img src="./img/참나물.PNG" alt="참나물" width="300px" class="img-edit">
+        <br>
+        <p>
+            비타민A의 전구체인 베타카로틴 풍부 -> 안구건조증 예방
+        </p>
+        <p>
+            섬유질 풍부 -> 변비 예방, 소화 잘 됨
+        </p>
+        <p>
+            육류와 함께 먹으면 서로 부족한 영양 보충을 할 수 있어 좋음
+        </p>
+        <br><br><br>
+        <img src="./img/배.PNG" alt="배" width="300px" class="img-edit">
+        <br>
+        <p>
+            펙틴 풍부 -> 혈중 콜레스테롤 수치 감소, 수분 부족으로 인한 변비 예방
+        </p>
+        <p>
+            이뇨 작용 도움
+        </p>
+        <p>
+            감기, 천식 등의 기관지 질환에 효과 有 (가래, 기침 없애고 목이 쉬었을 때 증상 완화)
+        </p>
+        <p>
+            해독작용 -> 숙취 해소
+        </p>
+        <p>
+            연육효소가 있어 단백질의 연육을 도와 육류를 더 부드럽게 먹을 수 있게 해줌
+        </p>
+        <br><br><br>
+        <img src="./img/꽁치.PNG" alt="꽁치" width="300px" class="img-edit">
+        <br>
+        <p>열량이 낮음 -> 다이어트에 효과적</p>
+        <p>꽁치의 붉은살에 비타민B12 풍부 -> 빈혈 예방</p>
+        <p>불포화지방산 풍부 -> 성인병 예방</p>
+        <p>꽁치는 산성 식품이라 알카리성 식품인 깻잎과 궁합이 좋음</p>    
+        <br><br><br>
+    </section>
+
+
+        <!--댓글 기능-->
+        <div class="comment-form">
+            <input type="text" id="author" placeholder="이름">
+            <textarea id="text" rows="4" placeholder="댓글 내용을 입력하세요"></textarea>
+            <button onclick="addComment()">댓글 달기</button>
+        </div>
+
+        <!--다음 페이지-->
+    
+    <div class="page">
+        <hr>
+        <a href="winter.html">다음 글></a>
+    </div>
+    
+    <script src="letter.js"></script>
+</body>
+</html>

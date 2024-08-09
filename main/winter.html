@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/letter.css">
+    <title>겨울</title>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo"></div>
+            <div class="menu">
+                <img src="./img/Rectangle 7.png" alt="로고" width="50px">
+                <span><a href="main.html">홈</a></span>
+                <span>피드</span>
+                <span>인기글</span>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="content">
+            <img src="./img/winter.png" alt="겨울">
+            <div class="text">
+                <h2>오늘의 인기글</h2>
+                <h1>겨울</h1>
+                <p>#겨울#제철음식</p>
+            </div>
+        </div>
+        
+    </nav>
+
+    <article>
+        <div>
+            <h3>오늘의 인기글</h3>
+            <hr>
+            <div>
+                <span>봄 </span><br>
+                <span>여름 </span><br>
+                <span>가을 </span><br>
+                <span>겨울 </span><br><br><br><br>
+            </div>
+        </div>
+        <div>
+            <h3>오늘의 퀴즈</h3>
+            <hr>
+            <div>
+                <span>제철음식 퀴즈</span>
+            </div>
+        </div>
+    </article>
+    <section class="edit">
+        <img src="./img/삼치.PNG" alt="삼치" width="300px" class="img-edit">
+        <br>
+        <p>
+            단백질 풍부
+        </p>
+        <p>
+            칼륨 많이 함유 -> 혈압을 내림 -> 고혈압 예방
+        </p>
+        <p>
+            DHA 풍부 -> 태아 및 성장기 어린이의 두뇌발달 도움, 치매 예방, 기억력 증진, 암 예방
+        </p>
+        <br><br><br>
+        <img src="./img/과메기.PNG" alt="과메기" width="300px" class="img-edit">
+        <br>
+        <p>
+            고단백 식품
+        </p>
+        <p>
+            등푸른 생선인 과메기는 불포화지방산 DHA, EPA 풍부 -> 고혈압, 심근경색, 동맥경화 예방
+        </p>
+        <p>
+            비타민E 다량 함유 -> 노화 예방
+        </p>
+        <p>
+            과메기의 아스파라긴 성분 -> 술을 마실 때 속이 편안함
+        </p>
+        <br><br><br>
+        <img src="./img/한라봉.PNG" alt="한라봉" width="300px" class="img-edit">
+        <br>
+        <p>카르티노이드 성분 -> 항산화</p>
+        <p>비타민C 풍부 -> 피로 회복, 감기 예방, 철의 흡수 증진, 콜라겐 형성 촉진</p>
+        <p>식이섬유 풍부 -> 변비 예방</p>
+        <p>철분의 함유가 높은 브로콜리와 먹었을 때 한라봉의 비타민C가 철분 흡수를 도와 궁합이 좋음</p>    
+        <br><br><br>
+    </section>
+
+
+        <!--댓글 기능-->
+        <div class="comment-form">
+            <input type="text" id="author" placeholder="이름">
+            <textarea id="text" rows="4" placeholder="댓글 내용을 입력하세요"></textarea>
+            <button onclick="addComment()">댓글 달기</button>
+        </div>
+
+        <!--다음 페이지-->
+    
+    <div class="page">
+        <hr>
+        <a href="quiz.html">퀴즈 ></a>
+    </div>
+
+        <script src="letter.js"></script>
+</body>
+</html>
