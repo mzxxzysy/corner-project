@@ -1,6 +1,7 @@
 * {
     font-family: "Spoqa Han Sans Neo", "sans-serif";
     margin: 0;
+    font-size : 20px;
   }
   
 header {
@@ -13,10 +14,19 @@ header {
   
     padding: 10 20px;
     background-color: #fffbda;
-    color: black;
+    color: #707070;
 
     border-bottom: 1px solid #e0e0e0;
 }  
+
+header a {
+    color: #707070;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
 
 .logo {
     width: 20px;
@@ -112,6 +122,16 @@ section {
 .page{
     text-align: right;
     margin-top: 10px;
+}
+
+.space {
+    margin-bottom : 10px;
+}
+
+.large-size {
+    padding: 10px 20px;
+    font-size : 20px;
+
 }
 
 
